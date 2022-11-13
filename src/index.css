@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.home {
+  background-image: url("./assets/home/background-home-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.destination {
+  background-image: url("./assets/destination/background-destination-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.crew {
+  background-image: url("./assets/crew/background-crew-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media(min-width: 768px){
+  .home {
+    background-image: url("./assets/home/background-home-tablet.png");
+  }
+  .destination {
+    background-image: url("./assets/destination/background-destination-tablet.jpg");
+  }
+  .crew {
+    background-image: url("./assets/crew/background-crew-tablet.jpg");
+  }
+}
+
+@media(min-width: 1024px){
+  .home {
+    background-image: url("./assets/home/background-home-desktop.png");
+  }
+  .destination {
+    background-image: url("./assets/destination/background-destination-desktop.jpg");
+  }
+  .crew {
+    background-image: url("./assets/crew/background-crew-desktop.jpg");
+  }
+}
+
+@media(max-width: 1140px){
+  .line {
+    width: 40%;
+    left: -30%;
+  }
+}
+
+
