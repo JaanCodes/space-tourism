@@ -6,8 +6,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 const Crew = () => {
   const { crewId } = useParams();
   const [crewData, setCrewData] = useState();
-  const [allCrewData, setAllCrewData] = useState(data.crew);
-  const navigate = useNavigate();
+  const [allCrewData] = useState(data.crew);
 
   useEffect(() => {
     setCrewData(allCrewData.filter((item) => crewId === item?.id)[0]);
