@@ -54,7 +54,7 @@ const Navbar = () => {
           <li className="uppercase cursor-pointer" onClick={() => navigation("/crew/01")}>
             <span className="font-bold text-white">02&nbsp;&nbsp;&nbsp;</span>Crew
           </li>
-          <li className="uppercase cursor-pointer" onClick={() => navigation("/technology")}>
+          <li className="uppercase cursor-pointer" onClick={() => navigation("/technology/1")}>
             <span className="font-bold text-white">03&nbsp;&nbsp;&nbsp;</span>Technology
           </li>
         </ul>
@@ -84,7 +84,7 @@ const Navbar = () => {
         </li>
         <li
           className="py-10 transition duration-300 cursor-pointer active:border-b-[3px] hover:border-b-[3px] hover:border-white/50 active:border-white"
-          onClick={() => navigate("/technology")}
+          onClick={() => navigate("/technology/1")}
         >
           <span className="hidden lg:inline font-bold">03&nbsp;&nbsp;</span>
           Technology
