@@ -21,7 +21,7 @@ const Destination = () => {
     <div className="destination h-full min-h-screen overflow-x-hidden">
       <Navbar />
       <section className="flex flex-col lg:flex-row lg:gap-20 items-center justify-center text-white lg:h-4/5 md:max-w-2xl lg:max-w-[86rem] lg:px-16 w-full mx-auto px-4 md:p-4 lg:pb-24 lg:pt-0">
-        <div className="w-full flex flex-col items-center lg:items-start">
+        <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start">
           <h3 className="uppercase font-barlowCondensed text-xl md:text-2xl tracking-widest md:self-start">
             <span className="text-[#979797] font-bold">{planetData?.id}&nbsp;&nbsp;&nbsp;</span>Pick your destination
           </h3>
@@ -29,7 +29,7 @@ const Destination = () => {
             <img src={planetData?.images?.webp} alt="" />
           </figure>
         </div>
-        <div className="flex flex-col items-center lg:items-start lg:mt-[15%]">
+        <div className="flex lg:w-1/2 flex-col items-center lg:items-start lg:mt-[15%]">
           <ul className="flex gap-6 mb-12">
             {planets.map((item) => (
               <Link to={`/destination/${item?.name?.toLowerCase()}`} key={item?.id}>

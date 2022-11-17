@@ -14,7 +14,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="flex md:items-center lg:justify-between justify-between pl-4 py-8 md:py-0">
+    <nav className="flex z-[99] md:items-center lg:justify-between justify-between pl-4 py-8 md:py-0">
       <picture onClick={() => navigate("/")} className="w-12 h-12 md:ml-6 lg:mt-8 select-none cursor-pointer">
         <img src={Logo} alt="" className="w-full h-full" />
       </picture>
